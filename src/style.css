@@ -75,14 +75,31 @@ body {
     font-family: Garamond, sans-serif;
 }
 
+header, main, footer {
+	padding: 4rem;
+}
+
+.link-container { 
+	display: flex;
+	gap: 1rem;
+}
+
+.link-container a { 
+	height: 2rem;
+	width: 2rem;
+	transition: 0.25s ease-in-out;
+}
+
+.link-container a:hover, .link-container a:focus { 
+	transform: scale(1.05);
+}
+
 /* Header Styling */
 
 header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	padding: 4rem;
 	background: linear-gradient(170deg, var(--second-accent), var(--second-accent) 50%, white 50%, white);
 }
 
@@ -95,7 +112,7 @@ header .img-container {
 	min-height: 60vh;
 	padding: 0.5rem 1rem;
 
-	background-image: url(Zach_Best.JPG);
+	background-image: url(zach_headshot.JPG);
 	background-size: cover;
 
 	display: flex;
@@ -128,26 +145,10 @@ header .about-me h2 {
 }
 
 header .about-me .link-container { 
-	display: flex;
-	gap: 1rem;
 	align-self: flex-end;
 }
 
-header .about-me .link-container a { 
-	height: 2rem;
-	width: 2rem;
-	transition: 0.25s ease-in-out;
-}
-
-header .about-me .link-container a:hover, header .about-me .link-container a:focus { 
-	transform: scale(1.05);
-}
-
 /* Main Content Styling */
-
-main {
-	padding: 4rem;
-}
 
 main h2 {
 	font-size: 2.5rem;
@@ -187,3 +188,34 @@ main .portfolio-container .portfolio-item .item-info h3 {
 main .portfolio-container .portfolio-item .item-info > div {
 	color: var(--darkgray-accent);
 }
+
+/* Footer Styling */
+
+footer {
+	display: flex;
+	gap: 2rem;
+
+	min-height: 40vh;
+	background-color: var(--second-accent);
+}
+
+footer .footer-info {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+
+	line-height: 1.1;
+	color: white;
+}
+
+footer .footer-info h2 {
+	font-size: 2.5rem;
+}
+
+footer .footer-img {
+	flex: 1 1 0;
+
+	background-image: url(yumi_wallpaper.jpg);
+	background-size: cover;
+}
+
