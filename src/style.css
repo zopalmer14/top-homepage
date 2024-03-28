@@ -76,7 +76,7 @@ body {
 }
 
 header, main, footer {
-	padding: 4rem;
+	padding: 4rem 10rem;
 }
 
 .link-container { 
@@ -276,6 +276,12 @@ footer .footer-img {
 
 /* Media Queries - Tablet */
 
+@media (max-width: 1400px) {
+	main {
+		padding: 4rem;
+	}
+}
+
 @media (max-width: 1100px) {
 	footer {
 		padding: 3rem;
@@ -294,15 +300,70 @@ footer .footer-img {
 		z-index: 2;
 	}
 
-	header .img-container h1 {
-		position: absolute;
-		top: 3rem;
-		left: calc(100% - 4rem);
-		white-space: nowrap;
-	}
-
 	header .about-me {
 		max-width: calc(100vw - 12rem);
 		z-index: 1;
+	}
+}
+
+/* Media Queries - Mobile */
+
+@media (max-width: 700px) {
+	header {
+		background: linear-gradient(160deg, var(--second-accent), var(--second-accent) 50%, white 50%, white);
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	header .img-container {
+		width: calc(100% - 2rem);
+	}
+
+	header .img-container h1 {
+		font-size: 5rem;
+	}
+
+	header .about-me {
+		align-items: center;
+		text-align: center;
+		gap: 1rem;
+		max-width: none;
+		padding: 0;
+		box-shadow: none;
+	}
+
+	header .about-me .link-container {
+		align-self: center;
+	}
+
+	header, main {
+		padding: 1.5rem;
+	}
+
+	main h2 {
+		text-align: center;
+	}
+
+	footer {
+		flex-direction: column;
+		gap: 0;
+		padding: 0;
+	}
+
+	footer .footer-info {
+		align-items: center;
+		text-align: center;
+
+		max-width: none;
+		padding: 2rem 1.5rem;
+	}
+
+	footer .footer-info .contact-info > div {
+		justify-content: center;
+	}
+
+	footer .footer-img {
+		max-width: 100vw;
+		min-height: 50vh;
 	}
 }
