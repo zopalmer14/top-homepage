@@ -193,9 +193,10 @@ main .portfolio-container .portfolio-item .item-info > div {
 
 footer {
 	display: flex;
+	justify-content: center;
 	gap: 2rem;
 
-	min-height: 40vh;
+	min-height: 50vh;
 	background-color: var(--second-accent);
 }
 
@@ -203,7 +204,9 @@ footer .footer-info {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	max-width: 50%;
 
+	font-size: 1.25rem;
 	line-height: 1.1;
 	color: white;
 }
@@ -212,8 +215,21 @@ footer .footer-info h2 {
 	font-size: 2.5rem;
 }
 
+footer .footer-info .contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+footer .footer-info .contact-info > div {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
 footer .footer-img {
 	flex: 1 1 0;
+	max-width: 50%;
 
 	background-image: url(yumi_wallpaper.jpg);
 	background-size: cover;
