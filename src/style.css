@@ -97,18 +97,15 @@ header, main, footer {
 /* Header Styling */
 
 header {
-	/* display: flex;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center; */
+
 	padding-top: 8rem;
 	background: linear-gradient(170deg, var(--second-accent), var(--second-accent) 50%, white 50%, white);
 }
 
-header .about-me {
-	/* display: flex;
-	flex-direction: column;
-	gap: 2rem; */
-	
+header .about-me {	
 	position: relative;
 	padding: 2rem;
 	padding-bottom: 6rem;
@@ -351,33 +348,47 @@ footer .footer-img {
 @media (max-width: 700px) {
 	header {
 		background: linear-gradient(160deg, var(--second-accent), var(--second-accent) 50%, white 50%, white);
-		flex-direction: column;
-		gap: 2rem;
-	}
-
-	header .img-container {
-		width: calc(100% - 2rem);
-	}
-
-	header .img-container h1 {
-		font-size: 5rem;
 	}
 
 	header .about-me {
-		align-items: center;
-		text-align: center;
-		gap: 1rem;
-		max-width: none;
 		padding: 0;
+		padding-bottom: 3rem;
 		box-shadow: none;
 	}
 
-	header .about-me .link-container {
-		align-self: center;
+	header .about-me .img-container {
+		min-height: 70vh;
+		width: calc(100% - 2rem);
+
+		top: 0;
+		left: 0;
+
+		margin-bottom: 2rem;
+		margin-right: 0;
 	}
 
-	header, main {
+	header .about-me .img-container h1 {
+		font-size: 6rem;
+		text-overflow: wrap;
+	}
+
+	header .about-me h2 {
+		font-size: 3.25rem;
+		text-align: center;
+		padding: 0;
+	}
+
+	header .about-me .link-container {
+		bottom: 0;
+		left: calc(50% - 2.5rem);
+	}
+
+	header {
 		padding: 1.5rem;
+	}
+
+	main {
+		padding: 4rem 1.5rem;
 	}
 
 	main h2 {
