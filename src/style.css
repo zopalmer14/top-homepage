@@ -108,7 +108,7 @@ header {
 header .about-me {	
 	position: relative;
 	padding: 2rem;
-	padding-bottom: 6rem;
+	padding-bottom: 0;
 	background-color: white;
 	box-shadow: 1px 1px 3px gray;
 
@@ -123,7 +123,7 @@ header .about-me .img-container {
 	top: -6rem;
 	left: -2rem;
 
-	margin-bottom: -6rem;
+	margin-bottom: -8rem;
 	margin-right: -0.5rem;
 
 	min-width: 25vw;
@@ -275,7 +275,6 @@ footer .footer-info .contact-info > div {
 
 footer .footer-img {
 	flex: 1 1 0;
-	max-width: 50%;
 
 	background-image: url(references/yumi_wallpaper.jpg);
 	background-size: cover;
@@ -289,13 +288,25 @@ footer .footer-img {
 		padding-right: 6rem;
 		padding-left: 6rem;
 	}
+
+	header .about-me {
+		padding-bottom: 4rem;
+	}
+
+	header .about-me .img-container {
+		margin-bottom: -13.5rem;
+	}
 	
 	main {
 		padding: 6rem;
 	}
+
+	footer {
+		padding: 4rem 6rem;
+	}
 }
 
-@media (max-width: 1200px) and (min-width: 700px) {
+@media (max-width: 1150px) and (min-width: 741px) {
 	footer {
 		padding: 3rem;
 		margin-top: 2rem;
@@ -304,10 +315,6 @@ footer .footer-img {
 	header {
 		padding: 4rem 6rem;
 		padding-top: 10rem;
-	}
-
-	header, .about-me {
-		display: block;
 	}
 
 	header .about-me {
@@ -337,17 +344,14 @@ footer .footer-img {
 	header .about-me h2 {
 		text-align: center;
 	}
-
-	header .about-me .link-container {
-		display: none;
-	}
 }
 
 /* Media Queries - Mobile */
 
-@media (max-width: 700px) {
+@media (max-width: 740px) {
 	header {
 		background: linear-gradient(160deg, var(--second-accent), var(--second-accent) 50%, white 50%, white);
+		padding: 3rem;
 	}
 
 	header .about-me {
@@ -364,7 +368,6 @@ footer .footer-img {
 		left: 0;
 
 		margin-bottom: 2rem;
-		margin-right: 0;
 	}
 
 	header .about-me .img-container h1 {
@@ -383,12 +386,8 @@ footer .footer-img {
 		left: calc(50% - 2.5rem);
 	}
 
-	header {
-		padding: 1.5rem;
-	}
-
 	main {
-		padding: 4rem 1.5rem;
+		padding: 3rem;
 	}
 
 	main h2 {
