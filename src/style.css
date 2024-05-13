@@ -79,12 +79,14 @@ header, main, footer {
 	padding: 4rem 10rem;
 }
 
+/* Link Container Styling */
+
 .link-container { 
 	display: flex;
 	gap: 1rem;
 }
 
-.link-container a { 
+.link-container a {
 	height: 2rem;
 	width: 2rem;
 	transition: 0.25s ease-in-out;
@@ -92,6 +94,11 @@ header, main, footer {
 
 .link-container a:hover, .link-container a:focus { 
 	transform: scale(1.05);
+}
+
+.link-container a i {
+	color: white;
+	font-size: 2rem;
 }
 
 /* Header Styling */
